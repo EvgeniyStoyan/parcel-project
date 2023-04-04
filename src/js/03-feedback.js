@@ -30,9 +30,7 @@ function onFormSubmit(e) {
 
 function onTextareaInput(e) {
   data[e.target.name] = e.target.value;
-  if (e.isComposing || e.keyCode === 229) {
-    return;
-  }
+
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
 }
 
