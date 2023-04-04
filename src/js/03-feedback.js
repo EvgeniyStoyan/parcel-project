@@ -20,15 +20,19 @@ function onFormSubmit(e) {
   if (input.value === '' || textarea.value === '') {
     return alert(`Всі поля мають бути заповнені !`);
   }
-  console.log('Send form');
+
   e.currentTarget.reset();
   localStorage.removeItem(LOCAL_STORAGE_KEY);
   console.log(data);
+  data.email = '';
+  data.message = '';
 }
 
 function onTextareaInput(e) {
   data[e.target.name] = e.target.value;
-
+  if (e.isComposing || e.keyCode === 229) {
+    return;
+  }
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
 }
 
