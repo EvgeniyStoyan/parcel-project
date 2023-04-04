@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["02-video.057c85f7.css","src/css/02-video.css"],"sourcesContent":[".video {\n  justify-content: center;\n  margin-top: 50px;\n  display: flex;\n}\n\n/*# sourceMappingURL=02-video.057c85f7.css.map */\n",".video {\n    margin-top: 50px;\n    display: flex;\n    justify-content: center;\n}"],"names":[],"version":3,"file":"02-video.057c85f7.css.map"}
